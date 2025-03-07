@@ -3,9 +3,9 @@
 
     #displayTable th,
     #displayTable tbody {
-
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-top: 4px;
         padding-bottom: 4px;
         font-size: x-small;
