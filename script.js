@@ -14,7 +14,7 @@ document.getElementById('btn').addEventListener("click", function () {
         <td class="w-1/6 text-center py-5">${gender || "Not Selected"}</td> <!-- Default value if no gender selected -->
         <td class="w-1/6 text-center py-5">${studentCourses || "Not Selected"}</td>
         <td class="w-1/6 text-center py-5">${studentEmail}</td>
-        <td class="w-1/6 text-center py-5"><button onclick="deleteRow()" class=" btn bg-red-400 px-5 py-1 rounded border-solid text-white font-semibold">Delete</button></td>
+        <td class="w-1/6 text-center py-5"><button onclick="deleteRow()" class=" btn bg-red-400 px-4 py-1 rounded border-solid text-white font-semibold">Delete</button></td>
     `
     table.querySelector('tbody').appendChild(trow);
 

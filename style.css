@@ -1,21 +1,29 @@
 @media only screen and (max-width: 640px) {
 
+
     #displayTable th,
     #displayTable tbody {
-        margin: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
+
+        padding-left: 15px;
+        padding-right: 15px;
         padding-top: 4px;
         padding-bottom: 4px;
         font-size: x-small;
     }
 
     #table td {
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 2px;
-        padding-bottom: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         font-size: xx-small;
     }
 
+    #Navbar h1 {
+        font-size: x-large;
+    }
+
+    #display h1 {
+        font-size: x-large;
+    }
 }
