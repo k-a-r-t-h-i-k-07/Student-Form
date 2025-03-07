@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Student Form</title>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="Navbar" class="flex justify-center items-center flex-col">
+        <img src="Images/formImg-3.jpg" alt="Form-Image" class="w-96">
+        <h1 class="text-gray-500 font-bold text-4xl">Student Form</h1>
+    </div>
+    <!-- Form -->
+    <div id="form" class="shadow-sm mx-auto p-10 pb-2 border-b-2 border-b-gray-5 border-t-0 w-1/2">
+        <table id="table" class="flex justify-center items-center">
+            <tr>
+                <td class="py-2 px-4 font-semibold">Name: </td>
+                <td class="py-2 px-4"><input id="name" type="text" placeholder="Name"
+                        class="border-2 border-gray-10 p-2 rounded-md">
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 font-semibold">Age: </td>
+                <td class="py-2 px-4"><input id="age" type="number" placeholder="Age"
+                        class="border-2 border-gray-10 p-2 rounded-md"></td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 font-semibold">Gender: </td>
+                <td class="py-2 px-4"><input type="radio" name="gender" value="Male" id="male"> Male
+                    <input type="radio" name="gender" value="Female" id="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 font-semibold">Course: </td>
+                <td class="py-2 px-4">
+                    <div class="dropdown">
+                        <select id="Courses">
+                            <option value="" selected>Select an option</option>
+                            <option value="JAVA">JAVA</option>
+                            <option value="Python">Python</option>
+                            <option value="Mern Stack">Mern Stack</option>
+                            <option value="DSA">DSA</option>
+                            <option value="React">React</option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="py-2 px-4 font-semibold">Email: </td>
+                <td class="py-2 px-4"><input id="email" type="email" placeholder="Email"
+                        class="border-2 border-gray-10 p-2 rounded-md"></td>
+            </tr>
+            <tr class="col-span-2 flex justify-center items-center py-5">
+                <td><button id="btn" class="bg-blue-400 px-10 py-2 rounded border-solid ">Add</button></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <!--Student Table -->
+    <div id="display" class="formTable p-10 mx-auto hidden">
+        <h1 class="flex justify-center items-center text-black-500 font-bold text-4xl mb-5 pb-5">Student Details</h1>
+        <table id="displayTable"
+            class="csTable flex justify-center items-center border-collapse border border-gray-200 flex-wrap">
+            <tr class="bg-gray-500 text-white">
+                <th class="py-2 border border-gray-300 px-10">Name</th>
+                <th class="px-10 py-2 border border-gray-300">Age</th>
+                <th class="px-10 py-2 border border-gray-300">Gender</th>
+                <th class="px-10 py-2 border border-gray-300">Course</th>
+                <th class="px-10 py-2 border border-gray-300">Email</th>
+                <th class="px-10 py-2 border border-gray-300">Action</th>
+            </tr>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
